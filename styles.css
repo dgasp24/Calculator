@@ -8,5 +8,19 @@ body{
 .container{
     border: solid;
     width: 350px;
-    height: 450px;
+    height: 550px;
+}
+
+.buttons{
+    border: solid;
+    height:  20%;
+    display: flex;
+}
+
+button{
+    height: calc(100%/1);
+    width: calc(100%/ 4);
+    box-sizing: border-box;
+    margin: 0px;;
+    padding: 0px;
 }
