@@ -1,26 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Knewave&display=swap');
+
+:root{
+    --main-font: "Chewy", system-ui;
+}
+
 body{
     justify-content: center;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
+    background-color: rgb(32, 31, 31);
+    font-family: var(--main-font);
+}
+
+.title{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 5px;
+    background-color: rgb(52, 52, 53);
+    padding: 5px;
+    border: solid black;
+    border-radius: 15px;
 }
 
 .container{
-    border: solid;
-    width: 350px;
-    height: 550px;
+    border: solid 10px;
+    width: auto;
+    height: auto;
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(95, 95, 95);
 }
 
 .buttons{
-    border: solid;
-    height:  20%;
+    margin: 10px;
     display: flex;
+    gap: 10px;
 }
 
 button{
-    height: calc(100%/1);
-    width: calc(100%/ 4);
-    box-sizing: border-box;
-    margin: 0px;;
-    padding: 0px;
+    height: 100px;
+    width: 100px;
+    font-family: var(--main-font);
+    cursor: pointer;
+    border: solid black;
+    border-radius: 50px;
+    font-style: bold;
+    font-size: 40px;
+    color: white;
+    background-color: rgb(56, 56, 56);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 2px 5px rgb(56, 56, 56);
+}
+
+button:active{
+    filter: brightness(1.2);
+}
+
+.operator{
+    background-color: rgb(177, 106, 14);
+}
+
+.row5 button:not(.operator){
+    background-color: rgb(105, 104, 104);
+}
+
+.text{
+    background-color: rgb(139, 138, 138);
+    height: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: solid;
 }
