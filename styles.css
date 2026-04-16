@@ -18,11 +18,12 @@ body{
     text-align: center;
     color: white;
     font-size: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     background-color: rgb(52, 52, 53);
     padding: 5px;
     border: solid black;
     border-radius: 15px;
+    box-shadow: 0px 2px 5px;
 }
 
 .container{
@@ -41,18 +42,20 @@ body{
 }
 
 button{
-    height: 100px;
-    width: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
     font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 40px;
+
     cursor: pointer;
     border: solid black;
     border-radius: 50px;
-    font-style: bold;
-    font-size: 40px;
     color: white;
     background-color: rgb(56, 56, 56);
-    position: relative;
-    z-index: 1;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.2s ease;
 }
 
@@ -74,9 +77,36 @@ button:active{
 }
 
 .text{
-    background-color: rgb(139, 138, 138);
+   background-color: rgb(139, 138, 138);
     height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 10px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    border-bottom: solid;
+    border-bottom: solid 5px black;
+    overflow: hidden;
+}
+
+#textHistory,
+#answers {
+    width: 100%;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#textHistory {
+    font-size: 20px;
+}
+
+#answers {
+    font-size: 50px;
+    padding-bottom: 0px;
 }
