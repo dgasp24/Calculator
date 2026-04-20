@@ -56,10 +56,10 @@ button{
     color: white;
     background-color: rgb(56, 56, 56);
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.2s ease;
+    transition: transform 0.15s ease, box-shadow 0.3s ease, filter 0.2s ease;
 }
 
-button:hover{
+button:active{
     transform: scale(1.2);
     box-shadow: 2px 2px 5px rgb(56, 56, 56);
 }
